@@ -13,25 +13,20 @@ public class Test {
 		al.add("ansari");
 		al.add("mohammad");
 		al.add("hassan");
-
-		Iterator itr = al.iterator();
-		while (itr.hasNext()) {
-			String s = (String) itr.next();
-			System.out.println(s);
-		}
 		
-		Iterator<String> itr2 = al.iterator();
+		ListIterator<String> itr2 = al.listIterator();
 		while(itr2.hasNext()) {
 			String ss = itr2.next();
 			System.out.println(ss);
 		}
 		
 		ListIterator<String> itr3 = al.listIterator();
-		while(itr3.hasPrevious()){
-			String sss = itr3.previous();
-			System.out.println("\nbackward " +sss);
+		
+		while(itr2.hasPrevious()){
+			String ss = itr2.previous();
+			System.out.println("\nbackward " +ss);
 		}
-
+		
 	}
 
 }
