@@ -20,7 +20,7 @@ public class Test {
 			System.out.println(ss);
 		}
 		
-		ListIterator<String> itr3 = al.listIterator();
+	
 		
 		while(itr2.hasPrevious()){
 			String ss = itr2.previous();
