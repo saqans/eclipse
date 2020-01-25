@@ -38,10 +38,9 @@ public class IteratorRemoveString {
 				itr1.remove();
 
 		}
-		
-		for(Book bk:books)
-		{
-			System.out.println(bk.id+" " +bk.name+" " +bk.author);
+
+		for (Book bk : books) {
+			System.out.println(bk.id + " " + bk.name + " " + bk.author);
 		}
 
 	}
