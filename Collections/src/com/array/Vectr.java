@@ -1,9 +1,10 @@
 package com.array;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Vector;
 
-public class Vectr {
+public class Vectr implements Comparable {
 
 	public static void main(String[] args) {
 		ArrayList<String> al = new ArrayList<String>();
@@ -28,7 +29,17 @@ public class Vectr {
 		v.add("arfa");
 		System.out.println(v.capacity());
 		System.out.println(v);
+		
+		Collections.sort(v);
 
 	}
+
+//	@Override
+//	public int compareTo(Object o) {
+//		// TODO Auto-generated method stub
+//		String s = (Object)o;
+//		if(o ==s)
+//		return 0;
+//	}
 
 }
